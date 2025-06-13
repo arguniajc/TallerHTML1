@@ -1,11 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ejercicio 13 - Tipos de campos</title>
 </head>
-<body>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+    }
     
+    h1 {
+        color: #333;
+    }
+    
+    form p {
+        margin-bottom: 15px;
+    }
+    
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="number"],
+    input[type="date"],
+    textarea {
+        width: 100%;
+        padding: 8px;
+        box-sizing: border-box;
+    }
+    
+    input[type="checkbox"] {
+        margin-right: 10px;
+    }   
+</style>
+<body>
+    <h1>Formulario extendido</h1>
+    
+    <form>
+        <p>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre">
+        </p>
+        
+        <p>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email">
+        </p>
+        
+        <p>
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena">
+        </p>
+        
+        <p>
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" min="18" max="99">
+        </p>
+        
+        <p>
+            <label for="fecha">Fecha de nacimiento:</label>
+            <input type="date" id="fecha" name="fecha">
+        </p>
+        
+        <p>
+            <input type="checkbox" id="terminos" name="terminos">
+            <label for="terminos">Acepto los términos y condiciones</label>
+        </p>
+        
+        <p>
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje" rows="4" cols="50"></textarea>
+        </p>
+    </form>
 </body>
 </html>

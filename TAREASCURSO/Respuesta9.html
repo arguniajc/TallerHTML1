@@ -1,11 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ejercicio 9 - Listas anidadas</title>
 </head>
-<body>
+<style> 
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 20px;
+    }
     
+    h1 {
+        color: #333;
+    }
+    
+    ul {
+        list-style-type: disc;
+        margin-left: 20px;
+    }
+    
+    ul ul {
+        list-style-type: circle;
+        margin-left: 20px;
+    }
+    
+    li {
+        margin-bottom: 10px;
+    }
+</style>
+<body>
+    <h1>Deportes y sus modalidades</h1>
+    
+    <ul>
+        <li>Fútbol
+            <ul>
+                <li>Fútbol 11</li>
+                <li>Fútbol 7</li>
+                <li>Fútbol sala</li>
+            </ul>
+        </li>
+        <li>Baloncesto
+            <ul>
+                <li>Baloncesto 5x5</li>
+                <li>Baloncesto 3x3</li>
+                <li>Baloncesto en silla de ruedas</li>
+            </ul>
+        </li>
+        <li>Natación
+            <ul>
+                <li>Estilo libre</li>
+                <li>Espalda</li>
+                <li>Pecho</li>
+                <li>Mariposa</li>
+            </ul>
+        </li>
+    </ul>
 </body>
 </html>

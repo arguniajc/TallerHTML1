@@ -1,11 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ejercicio 15 - Etiquetas y agrupación</title>
 </head>
-<body>
+<style> 
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background-color: #f4f4f4;
+    }
     
+    h1 {
+        color: #333;
+    }
+    
+    form {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    
+    fieldset {
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        padding: 10px;
+    }
+    
+    legend {
+        font-weight: bold;
+    }
+    
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="date"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border-radius: 3px;
+        border: 1px solid #ccc;
+    }
+    
+    button {
+        padding: 10px 15px;
+        background-color: #28a745;
+        color: white;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+    
+    button[type="reset"] {
+        background-color: #dc3545;
+    }
+</style>
+<body>
+    <h1>Formulario de registro</h1>
+    
+    <form>
+        <fieldset>
+            <legend>Información personal</legend>
+            
+            <p>
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre">
+            </p>
+            
+            <p>
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email">
+            </p>
+            
+            <p>
+                <label for="fecha">Fecha de nacimiento:</label>
+                <input type="date" id="fecha" name="fecha">
+            </p>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Preferencias</legend>
+            
+            <p>
+                <input type="checkbox" id="noticias" name="noticias">
+                <label for="noticias">Deseo recibir noticias</label>
+            </p>
+            
+            <p>
+                <input type="checkbox" id="ofertas" name="ofertas">
+                <label for="ofertas">Deseo recibir ofertas especiales</label>
+            </p>
+        </fieldset>
+        
+        <p>
+            <button type="submit">Registrarse</button>
+            <button type="reset">Limpiar</button>
+        </p>
+    </form>
 </body>
 </html>

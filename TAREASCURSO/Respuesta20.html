@@ -1,11 +1,143 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Información sobre el dodo, ave extinta de Mauricio">
+    <meta name="keywords" content="dodo, ave extinta, Mauricio, Raphus cucullatus">
+    <title>Ejercicio 20 - El Dodo</title>
 </head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 20px;
+        background-color: #f4f4f4;
+    }
+    h1, h2, h3 {
+        color: #333;
+    }
+    section {
+        margin-bottom: 20px;
+        background-color: #fff;
+        padding: 15px;
+        border-radius: 5px;
+    }
+    .gallery img {
+    width: 300px;
+        height: 200px;
+        border-radius: 5px;
+        margin-right: 10px;  
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    table, th, td {
+        border: 1px solid #ddd;
+    }
+    th, td {
+        padding: 8px;
+        text-align: left;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+   
+</style>
 <body>
+    <h1>El Dodo (<i>Raphus cucullatus</i>)</h1>
     
+    <section id="introduccion">
+        <h2>Introducción</h2>
+        <p>El dodo era un ave no voladora endémica de la isla Mauricio, en el océano Índico. 
+        Perteneciente a la familia de las palomas, era conocido por su gran tamaño y su 
+        incapacidad para volar.</p>
+    </section>
+    
+    <section id="habitat">
+        <h2>Hábitat</h2>
+        <p>El dodo habitaba exclusivamente en los bosques de Mauricio, una isla volcánica con 
+        un clima tropical. Vivía en áreas boscosas costeras donde encontraba alimento y refugio.</p>
+    </section>
+    
+    <section id="alimentacion">
+        <h2>Alimentación</h2>
+        <p>Se cree que el dodo era principalmente frugívoro, alimentándose de frutas caídas, 
+        nueces, semillas y posiblemente raíces. Su pico robusto le permitía romper cáscaras 
+        duras de frutos tropicales.</p>
+    </section>
+    
+    <section id="extincion">
+        <h2>Extinción</h2>
+        <p>El dodo se extinguió a finales del siglo XVII debido a:</p>
+        <ul>
+            <li>Caza por parte de marineros y colonos</li>
+            <li>Introducción de especies invasoras (ratas, cerdos, monos)</li>
+            <li>Destrucción de su hábitat natural</li>
+        </ul>
+        <p>El último avistamiento confirmado fue en 1662.</p>
+    </section>
+    
+    <section id="galeria">
+        <h2>Galería</h2>
+        <div class="gallery">
+            <img src="https://th.bing.com/th/id/R.5ec7671bcfc47a2f8ef2b465d7ef7c7c?rik=jLS2te%2fAVS3ARw&pid=ImgRaw&r=0" alt="Ilustración de un dodo" title="Reconstrucción artística del dodo">
+            <img src="https://th.bing.com/th/id/OIP.Gd_H15mSPjBnAuabxMB-XwHaE5?r=0&pid=ImgDet&w=474&h=313&rs=1" alt="Esqueleto de dodo" title="Esqueleto de dodo en museo">
+        </div>
+    </section>
+    
+    <section id="tabla">
+        <h2>Datos científicos</h2>
+        <table border="1">
+            <tr>
+                <th>Reino</th>
+                <td>Animalia</td>
+            </tr>
+            <tr>
+                <th>Filo</th>
+                <td>Chordata</td>
+            </tr>
+            <tr>
+                <th>Clase</th>
+                <td>Aves</td>
+            </tr>
+            <tr>
+                <th>Orden</th>
+                <td>Columbiformes</td>
+            </tr>
+            <tr>
+                <th>Familia</th>
+                <td>Columbidae</td>
+            </tr>
+        </table>
+    </section>
+    
+    <section id="contacto">
+        <h2>Más información</h2>
+        <form>
+            <fieldset>
+                <legend>Solicitar información</legend>
+                <p>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre">
+                </p>
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </p>
+                <p>
+                    <label for="consulta">Consulta:</label>
+                    <textarea id="consulta" name="consulta" rows="4"></textarea>
+                </p>
+                <button type="submit">Enviar</button>
+            </fieldset>
+        </form>
+    </section>
+    
+    <footer>
+        <p>© 2023 Información sobre el dodo | Fuente: Wikipedia y otras enciclopedias</p>
+    </footer>
 </body>
 </html>

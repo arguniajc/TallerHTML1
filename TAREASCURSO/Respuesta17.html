@@ -1,11 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ejercicio 17 - Div y span</title>
 </head>
-<body>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 20px;
+    }
     
+    .contenedor {
+        background-color: #fff;
+        border: 1px solid #ccc;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    
+    h1, h2 {
+        color: #333;
+    }
+    
+    p {
+        line-height: 1.6;
+    }
+    
+    .destacado {
+        color: red;
+        font-weight: bold;
+    }
+</style>
+<body>
+    <div class="contenedor">
+        <h1>Uso de div y span</h1>
+        
+        <p>Este es un párrafo dentro de un div. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        <span class="destacado">Esta parte está destacada con span</span> y el resto del texto sigue normal.</p>
+    </div>
+    
+    <div class="contenedor">
+        <h2>Segundo contenedor</h2>
+        
+        <p>Otro párrafo en otro div. Nullam auctor, <span class="destacado">nisi eget</span> 
+        condimentum iaculis, nisl ex aliquet purus, in ultrices nunc.</p>
+    </div>
 </body>
 </html>
